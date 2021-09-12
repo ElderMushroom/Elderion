@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:obsidian"
+  },
+  "result": "elderion:canedpeanutshels/chiseled_obsidian",
+  "group": "chiseled_obsidian",
+  "count": 1
+}

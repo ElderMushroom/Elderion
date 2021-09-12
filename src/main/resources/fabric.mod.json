@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "elderion",
+  "version": "${version}",
+  "name": "Elderion",
+  "description": "The Texturer's Mod!",
+  "authors": [
+    "DanielGolan"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/elderion/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.danielgolan.elderion.client.ElderionClient"
+    ],
+    "main": [
+      "net.danielgolan.elderion.Elderion"
+    ]
+  },
+  "mixins": [
+    "elderion.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
