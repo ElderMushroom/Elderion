@@ -7,8 +7,13 @@
   "authors": [
     "DanielGolan"
   ],
-  "contact": {},
-  "license": "MIT",
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/elderion",
+    "issues": "https://github.com/DanielGolan-mc/Elderion/issues",
+    "sources": "https://github.com/DanielGolan-mc/Elderion",
+    "discord": "https://discord.gg/9V8epgJWFC"
+  },
+  "license": "Custom; Available in sources",
   "icon": "assets/elderion/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -17,6 +22,9 @@
     ],
     "main": [
       "net.danielgolan.elderion.Elderion"
+    ],
+    "modmenu": [
+      "net.danielgolan.elderion.config.ElderionConfig"
     ]
   },
   "mixins": [
@@ -25,6 +33,14 @@
   "depends": {
     "fabricloader": ">=0.11.6",
     "fabric": "*",
-    "minecraft": "1.17.1"
+    "minecraft": "1.17.1",
+    "modmenu": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/9V8epgJWFC"
+      }
+    }
   }
 }

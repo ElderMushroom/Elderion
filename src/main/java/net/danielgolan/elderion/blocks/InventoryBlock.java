@@ -5,7 +5,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Rarity;
-import org.spongepowered.asm.service.mojang.Blackboard;
 
 public class InventoryBlock extends Block {
     private final BlockItem item;

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "end_stone",
+
+    "elderion:canedpeanutshels/chiseled_end_stone",
+    "elderion:canedpeanutshels/chiseled_end_stone_bricks"
+  ]
+}

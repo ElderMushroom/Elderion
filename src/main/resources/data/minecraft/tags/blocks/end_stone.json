@@ -1,12 +1,10 @@
 {
   "replace": false,
   "values": [
-    "end_stone",
     "end_stone_bricks",
     "end_stone_brick_slab",
     "end_stone_brick_stairs",
     "end_stone_brick_wall",
-    "elderion:canedpeanutshels/chiseled_end_stone",
-    "elderion:canedpeanutshels/chiseled_end_stone_bricks"
+    "#end_stone_blocks"
   ]
 }
