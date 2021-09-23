@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "elderion:blocks/canedpeanutshels/cut_prismarine_bricks"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:waxed_weathered_copper"
+  },
+  "result": "elderion:canedpeanutshels/chiseled_waxed_weathered_copper",
+  "group": "chiseled_waxed_weathered_copper",
+  "count": 1
+}

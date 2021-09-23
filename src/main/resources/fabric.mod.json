@@ -22,9 +22,6 @@
     ],
     "main": [
       "net.danielgolan.elderion.Elderion"
-    ],
-    "modmenu": [
-      "net.danielgolan.elderion.config.ElderionConfig"
     ]
   },
   "mixins": [
@@ -33,8 +30,7 @@
   "depends": {
     "fabricloader": ">=0.11.6",
     "fabric": "*",
-    "minecraft": "1.17.1",
-    "modmenu": "*"
+    "minecraft": "1.17.1"
   },
   "custom": {
     "modmenu": {

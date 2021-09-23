@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "prismarine_blocks"
+  },
+  "result": "elderion:canedpeanutshels/cut_prismarine_bricks",
+  "group": "cut_prismarine_bricks",
+  "count": 1
+}

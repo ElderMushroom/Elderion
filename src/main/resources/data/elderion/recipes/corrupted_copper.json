@@ -1,0 +1,15 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xXx",
+    "xxx"],
+  "key": {
+    "X": {
+      "item": "waxed_copper_block"
+    },
+    "x": {
+      "item": "glow_lichen"
+    }
+  }
+}
