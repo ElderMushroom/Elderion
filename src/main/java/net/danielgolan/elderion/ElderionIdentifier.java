@@ -9,10 +9,10 @@ public record ElderionIdentifier(Author author, String path) {
     }
 
     public Identifier toIdentifier() {
-        return new Identifier(author.modID(), author.name() + path);
+        return toIdentifier("");
     }
 
     public Identifier toIdentifier(String pathAddition) {
-        return new Identifier(author.modID(), author.name() + path + pathAddition);
+        return new Identifier(author.modID(), author.name() + '/' + path + pathAddition);
     }
 }

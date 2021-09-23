@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "illuminated_dark_prismarine"
+  },
+  "result": "elderion:canedpeanutshels/illuinated_dark_prismarine_stairs",
+  "group": "illuinated_dark_prismarine_stairs",
+  "count": 1
+}

@@ -3,8 +3,6 @@ package net.danielgolan.elderion;
 import net.danielgolan.elderion.blocks.BlockVariation;
 import net.danielgolan.elderion.blocks.VariedBlock;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.server.MinecraftServer;
 
 import static net.danielgolan.elderion.ElderionAuthor.canedpeanutshels;
 import static net.minecraft.block.Blocks.*;
@@ -14,22 +12,20 @@ public class Elderion implements ModInitializer {
 
     public static final VariedBlock CHISELED_END_STONE;
     public static final VariedBlock CHISELED_END_STONE_BRICKS;
-    public static final VariedBlock POLISHED_OBSIDIAN;
     public static final VariedBlock CHISELED_OBSIDIAN;
     public static final VariedBlock CHISELED_PURPUR_BRICKS;
     public static final VariedBlock CHISELED_PURPUR_PILLAR;
     public static final VariedBlock CHISELED_WAXED_OXIDIZED_COPPER;
     public static final VariedBlock CHISELED_WAXED_WEATHERED_COPPER;
+    public static final VariedBlock CORRUPTED_COPPER;
+    public static final VariedBlock CUT_PRISMARINE;
+    public static final VariedBlock CUT_PRISMARINE_BRICKS;
     public static final VariedBlock DIMMED_GLOWSTONE;
     public static final VariedBlock ILLUMINATED_DARK_PRISMARINE;
-    public static final VariedBlock POLISHED_PRISMARINE_BRICKS;
-    public static final VariedBlock CUT_PRISMARINE;
-    public static final VariedBlock CORRUPTED_COPPER;
-
-    /* todo: implement 2 blocks
+    public static final VariedBlock POLISHED_OBSIDIAN;
     public static final VariedBlock POLISHED_PRISMARINE;
-    public static final VariedBlock CUT_PRISMARINE_BRICKS;
-     */
+    public static final VariedBlock POLISHED_PRISMARINE_BRICKS;
+
     @Override
     public void onInitialize() {
 
@@ -65,5 +61,9 @@ public class Elderion implements ModInitializer {
                 .build(canedpeanutshels, "cut_prismarine").register();
         CORRUPTED_COPPER = VariedBlock.of(WAXED_COPPER_BLOCK)
                 .build(canedpeanutshels, "corrupted_copper").register();
+        CUT_PRISMARINE_BRICKS = VariedBlock.of(PRISMARINE_BRICKS)
+                .build(canedpeanutshels, "cut_prismarine_bricks").register();
+        POLISHED_PRISMARINE = VariedBlock.of(PRISMARINE)
+                .build(canedpeanutshels, "polished_prismarine");
     }
 }

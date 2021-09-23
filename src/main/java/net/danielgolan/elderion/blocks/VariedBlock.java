@@ -3,8 +3,6 @@ package net.danielgolan.elderion.blocks;
 import net.danielgolan.elderion.Author;
 import net.danielgolan.elderion.ElderionIdentifier;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.impl.object.builder.FabricBlockInternals;
-import net.fabricmc.fabric.mixin.object.builder.AbstractBlockSettingsAccessor;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
@@ -16,14 +14,12 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.function.ToIntFunction;
 
 public final class VariedBlock {
-    private final List<Block> blocks = new ArrayList<>();
-    private final List<BlockItem> items = new ArrayList<>();
+    private final HashMap<BlockVariation, Block> blocks = new HashMap<>();
+    private final HashMap<BlockVariation, BlockItem> items = new HashMap<>();
 
     private final ElderionIdentifier identifier;
 
@@ -32,14 +28,14 @@ public final class VariedBlock {
 
         Item.Settings settings = new Item.Settings().rarity(builder.rarity()).group(builder.type().GROUP);
 
-        blocks.set(0, builder.generator().generate(builder));
-        items.set(0, new BlockItem(block(), settings));
+        blocks.put(BlockVariation.BLOCK, builder.generator().generate(builder));
+        items.put(BlockVariation.BLOCK, new BlockItem(block(), settings));
 
         builder.variations.forEach((variation, bool) -> {
             if (variation == BlockVariation.BLOCK) return;
 
-            blocks.set(variation.ID, builder.generator().generateVariation(builder, block(), variation));
-            items.set(variation.ID, new BlockItem(block(variation), settings));
+            blocks.put(variation, builder.generator().generateVariation(builder, block(), variation));
+            items.put(variation, new BlockItem(block(variation), settings));
         });
 
         if (register) register();
@@ -63,7 +59,7 @@ public final class VariedBlock {
     }
 
     public Block block(BlockVariation variation) {
-        return blocks.get(variation.ID);
+        return blocks.get(variation);
     }
 
     public BlockItem item() {
@@ -71,7 +67,7 @@ public final class VariedBlock {
     }
 
     public BlockItem item(BlockVariation variation) {
-        return items.get(variation.ID);
+        return items.get(variation);
     }
 
     public static Builder builder(Material material, MapColor color) {

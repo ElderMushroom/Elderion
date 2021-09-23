@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "elderion:blocks/canedpeanutshels/illuminated_dark_prismarine",
+    "top": "elderion:blocks/canedpeanutshels/illuminated_dark_prismarine",
+    "side": "elderion:blocks/canedpeanutshels/illuminated_dark_prismarine"
+  }
+}
