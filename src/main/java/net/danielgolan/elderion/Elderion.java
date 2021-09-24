@@ -37,7 +37,7 @@ public class Elderion implements ModInitializer {
         CHISELED_END_STONE_BRICKS = VariedBlock.of(END_STONE_BRICKS)
                 .build(canedpeanutshels, "chiseled_end_stone_bricks").register();
         POLISHED_OBSIDIAN = VariedBlock.of(OBSIDIAN)
-                .build(canedpeanutshels, "polihsed_obsidian").register();
+                .build(canedpeanutshels, "polished_obsidian").register();
         CHISELED_OBSIDIAN = VariedBlock.of(OBSIDIAN)
                 .build(canedpeanutshels, "chiseled_obsidian").register();
         CHISELED_PURPUR_BRICKS = VariedBlock.of(PURPUR_BLOCK)

@@ -206,16 +206,6 @@ public final class VariedBlock {
             return this;
         }
 
-        public Builder dropsNothing() {
-            super.dropsNothing();
-            return this;
-        }
-
-        public Builder dropsLike(Block block) {
-            super.dropsLike(block);
-            return this;
-        }
-
         public Builder air() {
             super.air();
             return this;
@@ -263,11 +253,6 @@ public final class VariedBlock {
 
         public Builder resistance(float resistance) {
             super.resistance(resistance);
-            return this;
-        }
-
-        public Builder drops(Identifier dropTableId) {
-            super.drops(dropTableId);
             return this;
         }
 

@@ -4,6 +4,7 @@
   "package": "net.danielgolan.elderion.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "BlockSettingsAccessor"
   ],
   "client": [
   ],
