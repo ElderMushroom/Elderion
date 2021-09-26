@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "emerald_block"
+  },
+  "result": "elderion:crystalline_robin/cut_emerald",
+  "group": "cut_emerald",
+  "count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "amethyst_block"
+  },
+  "result": "elderion:crystalline_robin/cut_amethyst",
+  "group": "cut_amethyst",
+  "count": 1
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "gold_block"
+  },
+  "result": "elderion:crystalline_robin/cut_gold",
+  "group": "cut_gold",
+  "count": 1
+}

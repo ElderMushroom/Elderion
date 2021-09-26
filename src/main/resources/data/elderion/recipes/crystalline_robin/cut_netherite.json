@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "netherite_block"
+  },
+  "result": "elderion:crystalline_robin/cut_netherite",
+  "group": "cut_netherite",
+  "count": 1
+}

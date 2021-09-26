@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "redstone_block"
+  },
+  "result": "elderion:crystalline_robin/cut_redstone",
+  "group": "cut_redstone",
+  "count": 1
+}

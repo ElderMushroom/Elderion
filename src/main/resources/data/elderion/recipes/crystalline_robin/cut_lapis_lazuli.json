@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "lapis_lazuli_block"
+  },
+  "result": "elderion:crystalline_robin/cut_lapis_lazuli",
+  "group": "cut_lapis_lazuli",
+  "count": 1
+}

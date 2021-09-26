@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "dark_prismarine",
-    "elderion:canedpeanutshels/illuminated_dark_prismarine",
-    "elderion:canedpeanutshels/illuminated_dark_prismarine_stairs"
+    "elderion:canedpeanutshels/illuminated_dark_prismarine"
   ]
 }
