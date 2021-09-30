@@ -13,7 +13,7 @@
     "sources": "https://github.com/DanielGolan-mc/Elderion",
     "discord": "https://discord.gg/9V8epgJWFC"
   },
-  "license": "Custom; Available in sources",
+  "license": "MIT",
   "icon": "assets/elderion/icon.png",
   "environment": "*",
   "entrypoints": {
