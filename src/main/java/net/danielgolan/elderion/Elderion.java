@@ -1,6 +1,6 @@
 package net.danielgolan.elderion;
 
-import net.danielgolan.elderion.blocks.VariedBlock;
+import net.danielgolan.elderion.library.blocks.VariedBlock;
 import net.fabricmc.api.ModInitializer;
 
 import static net.danielgolan.elderion.ElderionAuthor.canedpeanutshels;
