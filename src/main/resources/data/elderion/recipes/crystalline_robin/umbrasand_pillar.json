@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "elderion:crystalline_robin/umbrasand"
+  },
+  "result": "elderion:crystalline_robin/umbrasand_pillar",
+  "group": "umbrasand_pillar",
+  "count": 1
+}

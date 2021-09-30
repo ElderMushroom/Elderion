@@ -5,6 +5,25 @@
   "block.elderion.canedpeanutshels.chiseled_obsidian": "Chiseled Obsidian",
   "block.elderion.canedpeanutshels.chiseled_purpur_bricks": "Chiseled Purpur Bricks",
   "block.elderion.canedpeanutshels.chiseled_purpur_pillar": "Chiseled Purpur Pillar",
+  "block.elderion.canedpeanutshels.chiseled_waxed_oxidized_copper": "Chiseled Waxed Oxidized Copper Block",
+  "block.elderion.canedpeanutshels.chiseled_waxed_weathered_copper": "Chiseled Waxed Weathered Copper Block",
+  "block.elderion.canedpeanutshels.corrupted_copper": "Corrupted Copper Block",
+  "block.elderion.canedpeanutshels.cut_prismarine": "Cut Prismarine",
+  "block.elderion.canedpeanutshels.cut_prismarine_bricks": "Cut Prismarine Bricks",
+  "block.elderion.canedpeanutshels.dimmed_glowstone": "Dimmed Glowstone",
+  "block.elderion.canedpeanutshels.illuminated_dark_prismarine": "Illuminated Dark Prismarine",
+  "block.elderion.canedpeanutshels.polished_prismarine": "Polished Prismarine",
+  "block.elderion.canedpeanutshels.polished_prismarine_bricks": "Polished Prismarine Bricks",
+  "block.elderion.canedpeanutshels.smooth_amethyst": "Smooth Amethyst",
+
+  "block.elderion.crystalline_robin.cut_emerald": "Cut Emerald",
+  "block.elderion.crystalline_robin.cut_amethyst": "Cut Amethyst",
+  "block.elderion.crystalline_robin.cut_iron": "Cut Iron",
+  "block.elderion.crystalline_robin.cut_netherite": "Cut Netherite",
+  "block.elderion.crystalline_robin.cut_gold": "Cut Gold",
+  "block.elderion.crystalline_robin.cut_diamond": "Cut Diamond",
+  "block.elderion.crystalline_robin.cut_lapis_lazuli": "Cut Lapis Lazuli",
+  "block.elderion.crystalline_robin.cut_redstone": "Cut Redstone",
 
   "block.minecraft.purpur_block": "Purpur Bricks"
 }

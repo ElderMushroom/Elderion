@@ -3,12 +3,14 @@ package net.danielgolan.elderion;
 import net.danielgolan.elderion.blocks.VariedBlock;
 import net.fabricmc.api.ModInitializer;
 
-import static net.danielgolan.elderion.ElderionAuthor.*;
+import static net.danielgolan.elderion.ElderionAuthor.canedpeanutshels;
+import static net.danielgolan.elderion.ElderionAuthor.crystalline_robin;
 import static net.minecraft.block.Blocks.*;
 
 public class Elderion implements ModInitializer {
     public static final String MOD_ID = "elderion";
 
+    //region Peanut
     public static final VariedBlock CHISELED_END_STONE;
     public static final VariedBlock CHISELED_END_STONE_BRICKS;
     public static final VariedBlock CHISELED_OBSIDIAN;
@@ -24,6 +26,9 @@ public class Elderion implements ModInitializer {
     public static final VariedBlock POLISHED_OBSIDIAN;
     public static final VariedBlock POLISHED_PRISMARINE;
     public static final VariedBlock POLISHED_PRISMARINE_BRICKS;
+    public static final VariedBlock SMOOTH_AMETHYST;
+    //endregion
+    //region Robin
     public static final VariedBlock CUT_EMERALD;
     public static final VariedBlock CUT_AMETHYST;
     public static final VariedBlock CUT_IRON;
@@ -32,7 +37,13 @@ public class Elderion implements ModInitializer {
     public static final VariedBlock CUT_DIAMOND;
     public static final VariedBlock CUT_LAPIS_LAZULI;
     public static final VariedBlock CUT_REDSTONE;
-    public static final VariedBlock SMOOTH_AMETHYST;
+    //endregion
+
+    /*
+    private static final ConfiguredFeature<?, ?> UMBRASAND_ORE;
+    public static final VariedBlock UMBRASAND;
+    public static final VariedBlock UMBRASAND_PILLAR;
+     */
 
     public void onInitialize() { }
 
@@ -87,5 +98,19 @@ public class Elderion implements ModInitializer {
                 .build(crystalline_robin, "cut_redstone").register();
         SMOOTH_AMETHYST = VariedBlock.of(AMETHYST_BLOCK)
                 .build(canedpeanutshels, "smooth_amethyst").register();
+        /*
+        UMBRASAND = VariedBlock.of(END_STONE)
+                .sounds(BlockSoundGroup.GRAVEL)
+                .breakByTool(FabricToolTags.SHOVELS, 2)
+                .build(crystalline_robin, "umbrasand");
+        UMBRASAND_PILLAR = VariedBlock.of(END_STONE)
+                .breakByTool(FabricToolTags.PICKAXES, 2)
+                .build(crystalline_robin, "umbrasand_pillar");
+
+        UMBRASAND_ORE = Feature.SCATTERED_ORE
+                .configure(new OreFeatureConfig(new BlockMatchRuleTest(END_STONE),
+                        UMBRASAND.block().getDefaultState(), 30))
+                .range(new RangeDecoratorConfig(new UniformHeightProvider()));
+         */
     }
 }

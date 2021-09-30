@@ -82,6 +82,10 @@ public final class VariedBlock {
         return of(AbstractBlock.Settings.copy(block));
     }
 
+    public static Builder of(VariedBlock block) {
+        return of(block.block());
+    }
+
     public static final class Builder extends FabricBlockSettings {
         private final HashMap<BlockVariation, Boolean> variations = new HashMap<>();
         private BlockType type = BlockType.BUILDING;

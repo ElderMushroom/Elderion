@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "air"
+  },
+  "result": "elderion:crystalline_robin/umbrasand",
+  "group": "umbrasand",
+  "count": 1
+}
