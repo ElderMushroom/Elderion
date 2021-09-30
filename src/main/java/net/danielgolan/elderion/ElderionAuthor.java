@@ -1,5 +1,7 @@
 package net.danielgolan.elderion;
 
+import net.danielgolan.elderion.library.Author;
+
 public enum ElderionAuthor implements Author {
     canedpeanutshels, daniel_golan, crystalline_robin;
 
