@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "tag": "end_stone_blocks"
+    "item": "end_stone"
   },
   "result": "elderion:canedpeanutshels/chiseled_end_stone",
   "group": "chiseled_end_stone",

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "tag": "purpur_blocks"
+    "item": "purpur_pillar"
   },
   "result": "elderion:canedpeanutshels/chiseled_purpur_pillar",
   "group": "chiseled_purpur_pillar",

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "tag": "prismarine_blocks"
+    "item": "prismarine"
   },
   "result": "elderion:canedpeanutshels/polished_prismarine",
   "group": "polished_prismarine",

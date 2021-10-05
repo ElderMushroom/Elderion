@@ -1,5 +1,5 @@
 {
-  "type":"minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shaped",
   "pattern": [
     "xxx",
     "xXx",
@@ -11,5 +11,9 @@
     "x": {
       "item": "glow_lichen"
     }
+  },
+  "result": {
+    "count": 5,
+    "item": "elderion:canedpeanutshels/corrupted_copper"
   }
 }

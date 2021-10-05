@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "white_wool"
+  },
+  "result": "elderion:crystalline_robin/string_block",
+  "group": "string_block",
+  "count": 1
+}

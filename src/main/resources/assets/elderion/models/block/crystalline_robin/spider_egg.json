@@ -1,0 +1,30 @@
+{
+  "credit": "Made by Robin the Gemini in Blockbench",
+  "textures": {
+    "1": "elderion:blocks/crystalline_robin/spider_egg",
+    "particle": "elderion:blocks/crystalline_robin/string_block"
+  },
+  "elements": [
+    {
+      "name": "spider_egg",
+      "from": [4, 0, 4],
+      "to": [12, 8, 12],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+      "faces": {
+        "north": {"uv": [0, 8, 8, 16], "texture": "#1"},
+        "east": {"uv": [8, 8, 16, 16], "texture": "#1"},
+        "south": {"uv": [0, 8, 8, 16], "texture": "#1"},
+        "west": {"uv": [8, 8, 16, 16], "texture": "#1"},
+        "up": {"uv": [8, 0, 16, 8], "texture": "#1"},
+        "down": {"uv": [8, 0, 16, 8], "texture": "#1"}
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "egg",
+      "origin": [8, 8, 8],
+      "children": [0]
+    }
+  ]
+}

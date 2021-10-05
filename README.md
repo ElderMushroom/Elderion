@@ -7,5 +7,5 @@ and we're adding it (for free!).
 DanielGolan is the supreme coder, 
 and peanut is the supreme 32pixel texturer.
 ### Requirements
-Fabric
-Elderly Lib (versions 1.0.1+)
+* Fabric
+* Elderly Library [![](https://jitpack.io/v/DanielGolan-mc/ElderyLib.svg)](https://jitpack.io/#DanielGolan-mc/ElderyLib)

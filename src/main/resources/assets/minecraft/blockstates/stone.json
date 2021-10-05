@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "snowy=false": {
+      "model": "minecraft:block/stone"
+    },
+    "snowy=true": {
+      "model": "elderion:block/stone_snow"
+    }
+  }
+}

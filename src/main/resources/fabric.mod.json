@@ -13,7 +13,7 @@
     "sources": "https://github.com/DanielGolan-mc/Elderion",
     "discord": "https://discord.gg/9V8epgJWFC"
   },
-  "license": "MIT",
+  "license": "LGPL-2.1 License",
   "icon": "assets/elderion/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -30,7 +30,8 @@
   "depends": {
     "fabricloader": ">=0.11.6",
     "fabric": "*",
-    "minecraft": "1.17.1"
+    "minecraft": "1.17.1",
+    "elderly_lib": "1.1.*"
   },
   "custom": {
     "modmenu": {

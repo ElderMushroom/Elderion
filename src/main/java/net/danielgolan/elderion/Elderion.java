@@ -37,6 +37,10 @@ public class Elderion implements ModInitializer {
     public static final VariedBlock CUT_DIAMOND;
     public static final VariedBlock CUT_LAPIS_LAZULI;
     public static final VariedBlock CUT_REDSTONE;
+    /*
+    public static final VariedBlock STRING_BLOCK;
+    public static final VariedBlock SPIDER_EGG;
+     */
     //endregion
 
     /*
@@ -45,7 +49,9 @@ public class Elderion implements ModInitializer {
     public static final VariedBlock UMBRASAND_PILLAR;
      */
 
-    public void onInitialize() { }
+    public void onInitialize() {
+        //((BlockAccessor) STONE).setDefaultBlockState(STONE.getStateManager().getDefaultState().with(Properties.SNOWY, false));
+    }
 
     static {
         CHISELED_END_STONE = VariedBlock.of(END_STONE)
@@ -85,7 +91,7 @@ public class Elderion implements ModInitializer {
         CUT_AMETHYST = VariedBlock.of(AMETHYST_BLOCK)
                 .build(crystalline_robin, "cut_amethyst").register();
         CUT_IRON = VariedBlock.of(IRON_BLOCK)
-                .build(crystalline_robin, "cut_iron_block");
+                .build(crystalline_robin, "cut_iron").register();
         CUT_NETHERITE = VariedBlock.of(NETHERITE_BLOCK)
                 .build(crystalline_robin, "cut_netherite").register();
         CUT_GOLD = VariedBlock.of(GOLD_BLOCK)
@@ -98,6 +104,14 @@ public class Elderion implements ModInitializer {
                 .build(crystalline_robin, "cut_redstone").register();
         SMOOTH_AMETHYST = VariedBlock.of(AMETHYST_BLOCK)
                 .build(canedpeanutshels, "smooth_amethyst").register();
+        /*
+        STRING_BLOCK = VariedBlock.of(WHITE_WOOL)
+                .build(crystalline_robin, "string_block").register();
+        SPIDER_EGG = VariedBlock.of(WHITE_WOOL)
+                .boundingBox(Block.createCuboidShape(4, 0, 4, 12, 8, 12))
+                .build(crystalline_robin, "spider_egg").register();
+         */
+
         /*
         UMBRASAND = VariedBlock.of(END_STONE)
                 .sounds(BlockSoundGroup.GRAVEL)
