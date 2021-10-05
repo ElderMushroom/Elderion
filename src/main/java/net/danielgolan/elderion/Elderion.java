@@ -2,6 +2,7 @@ package net.danielgolan.elderion;
 
 import net.danielgolan.elderion.library.blocks.VariedBlock;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.block.Block;
 
 import static net.danielgolan.elderion.ElderionAuthor.canedpeanutshels;
 import static net.danielgolan.elderion.ElderionAuthor.crystalline_robin;
@@ -37,10 +38,8 @@ public class Elderion implements ModInitializer {
     public static final VariedBlock CUT_DIAMOND;
     public static final VariedBlock CUT_LAPIS_LAZULI;
     public static final VariedBlock CUT_REDSTONE;
-    /*
     public static final VariedBlock STRING_BLOCK;
     public static final VariedBlock SPIDER_EGG;
-     */
     //endregion
 
     /*
@@ -104,13 +103,11 @@ public class Elderion implements ModInitializer {
                 .build(crystalline_robin, "cut_redstone").register();
         SMOOTH_AMETHYST = VariedBlock.of(AMETHYST_BLOCK)
                 .build(canedpeanutshels, "smooth_amethyst").register();
-        /*
         STRING_BLOCK = VariedBlock.of(WHITE_WOOL)
                 .build(crystalline_robin, "string_block").register();
         SPIDER_EGG = VariedBlock.of(WHITE_WOOL)
                 .boundingBox(Block.createCuboidShape(4, 0, 4, 12, 8, 12))
                 .build(crystalline_robin, "spider_egg").register();
-         */
 
         /*
         UMBRASAND = VariedBlock.of(END_STONE)
