@@ -40,7 +40,11 @@ dependencies {
 
     modImplementation "com.github.DanielGolan-mc:ElderyLib:${project.elderly_version}"
 
-    modApi("me.shedaniel.cloth:cloth-config-fabric:${project.config_version}") {
+    modApi ("me.shedaniel.cloth:cloth-config-fabric:${project.config_version}") {
+        exclude group: "net.fabricmc.fabric-api"
+    }
+
+    modApi ("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}") {
         exclude group: "net.fabricmc.fabric-api"
     }
 }
@@ -84,6 +88,8 @@ jar {
     }
 }
 
+sourcesJar { }
+
 // configure the maven publication
 publishing {
     publications {
@@ -105,4 +111,8 @@ publishing {
         // The repositories here will be used for publishing your artifact, not for
         // retrieving dependencies.
     }
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/elderion.accesswidener")
 }

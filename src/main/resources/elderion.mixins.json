@@ -7,6 +7,9 @@
     "BlockSettingsAccessor"
   ],
   "client": [
+    "HeartTypeInvoker",
+    "InGameHudMixin",
+    "DrawableHelperInvoker"
   ],
   "injectors": {
     "defaultRequire": 1
