@@ -38,15 +38,15 @@ public class Elderion implements ModInitializer {
     public static final VariedBlock CUT_DIAMOND;
     public static final VariedBlock CUT_LAPIS_LAZULI;
     public static final VariedBlock CUT_REDSTONE;
-    public static final VariedBlock STRING_BLOCK;
+    //public static final VariedBlock STRING_BLOCK;
     public static final VariedBlock SPIDER_EGG;
     //endregion
 
-    /*
+    /*/
     private static final ConfiguredFeature<?, ?> UMBRASAND_ORE;
     public static final VariedBlock UMBRASAND;
     public static final VariedBlock UMBRASAND_PILLAR;
-     */
+    /*/
 
     public void onInitialize() {
         //((BlockAccessor) STONE).setDefaultBlockState(STONE.getStateManager().getDefaultState().with(Properties.SNOWY, false));
@@ -103,13 +103,15 @@ public class Elderion implements ModInitializer {
                 .build(crystalline_robin, "cut_redstone").register();
         SMOOTH_AMETHYST = VariedBlock.of(AMETHYST_BLOCK)
                 .build(canedpeanutshels, "smooth_amethyst").register();
+        /*/
         STRING_BLOCK = VariedBlock.of(WHITE_WOOL)
                 .build(crystalline_robin, "string_block").register();
+        /*/
         SPIDER_EGG = VariedBlock.of(WHITE_WOOL)
                 .boundingBox(Block.createCuboidShape(4, 0, 4, 12, 8, 12))
                 .build(crystalline_robin, "spider_egg").register();
 
-        /*
+        /*/
         UMBRASAND = VariedBlock.of(END_STONE)
                 .sounds(BlockSoundGroup.GRAVEL)
                 .breakByTool(FabricToolTags.SHOVELS, 2)
@@ -122,6 +124,6 @@ public class Elderion implements ModInitializer {
                 .configure(new OreFeatureConfig(new BlockMatchRuleTest(END_STONE),
                         UMBRASAND.block().getDefaultState(), 30))
                 .range(new RangeDecoratorConfig(new UniformHeightProvider()));
-         */
+        /*/
     }
 }

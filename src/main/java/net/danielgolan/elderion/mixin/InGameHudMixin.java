@@ -14,7 +14,7 @@ import static net.danielgolan.elderion.mixin.HeartTypeInvoker.invokeFromPlayerSt
 
 
 @Mixin(InGameHud.class)
-public abstract class InGameHudMixin extends DrawableHelper{
+public abstract class InGameHudMixin extends DrawableHelper {
     private static ElderionHeartType heartType;
 
     //@Inject(method = "renderHealthBar", at = @At("HEAD"))
