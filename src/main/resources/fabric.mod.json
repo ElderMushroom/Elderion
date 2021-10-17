@@ -30,8 +30,8 @@
   "depends": {
     "fabricloader": ">=0.11.6",
     "fabric": "*",
-    "minecraft": "21w40a",
-    "elderly_lib": "1.1.*"
+    "minecraft": "*",
+    "elderly_lib": "21w40a-1.1.4"
   },
   "custom": {
     "modmenu": {
