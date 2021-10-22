@@ -27,5 +27,9 @@
   "block.elderion.crystalline_robin.spider_egg": "Spider Egg",
   "block.elderion.crystalline_robin.string_block": "String Block",
 
+  "enchantment.elderion.poison": "Kodoku",
+  "enchantment.elderion.poison_tipping": "Kodoku Assassination",
+  "enchantment.elderion.poison_resistance": "Kodoku Training",
+
   "block.minecraft.purpur_block": "Purpur Bricks"
 }

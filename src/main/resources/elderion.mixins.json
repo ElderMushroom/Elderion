@@ -4,12 +4,13 @@
   "package": "net.danielgolan.elderion.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "BlockMixin",
     "BlockSettingsAccessor"
   ],
   "client": [
+    "DrawableHelperInvoker",
     "HeartTypeInvoker",
-    "InGameHudMixin",
-    "DrawableHelperInvoker"
+    "InGameHudMixin"
   ],
   "injectors": {
     "defaultRequire": 1

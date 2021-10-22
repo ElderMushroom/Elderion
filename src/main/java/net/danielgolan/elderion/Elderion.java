@@ -1,8 +1,15 @@
 package net.danielgolan.elderion;
 
 import net.danielgolan.elderion.library.blocks.VariedBlock;
+import net.danielgolan.elderion.magic.AutoSmelterEnchantment;
+import net.danielgolan.elderion.magic.KodokuResistanceEnchantment;
+import net.danielgolan.elderion.magic.PoisonTippedEnchantment;
+import net.danielgolan.elderion.magic.PoisonousEnchantment;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import static net.danielgolan.elderion.ElderionAuthor.canedpeanutshels;
 import static net.danielgolan.elderion.ElderionAuthor.crystalline_robin;
@@ -40,6 +47,16 @@ public class Elderion implements ModInitializer {
     public static final VariedBlock CUT_REDSTONE;
     //public static final VariedBlock STRING_BLOCK;
     public static final VariedBlock SPIDER_EGG;
+    //endregion
+    //region Enchants
+    public static final Enchantment POISON = Registry.register(Registry.ENCHANTMENT,
+            new Identifier(MOD_ID, "poison"), new PoisonousEnchantment());
+    public static final Enchantment POISON_TIPPING = Registry.register(Registry.ENCHANTMENT,
+            new Identifier(MOD_ID, "poison_tipping"), new PoisonTippedEnchantment());
+    public static final Enchantment POISON_RESISTANCE = Registry.register(Registry.ENCHANTMENT,
+            new Identifier(MOD_ID, "poison_resistance"), new KodokuResistanceEnchantment());
+    public static final Enchantment AUTO_SMELTING = Registry.register(Registry.ENCHANTMENT,
+            new Identifier(MOD_ID, "auto_smelt"), new AutoSmelterEnchantment());
     //endregion
 
     /*/
