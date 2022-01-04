@@ -1,5 +1,6 @@
 package net.danielgolan.elderion;
 
+import net.danielgolan.elderion.item.WitherBoneMealItem;
 import net.danielgolan.elderion.library.blocks.VariedBlock;
 import net.danielgolan.elderion.magic.AutoSmelterEnchantment;
 import net.danielgolan.elderion.magic.KodokuResistanceEnchantment;
@@ -7,13 +8,24 @@ import net.danielgolan.elderion.magic.PoisonTippedEnchantment;
 import net.danielgolan.elderion.magic.PoisonousEnchantment;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.item.Item;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
+import net.minecraft.util.math.VerticalSurfaceType;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.stateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 
-import static net.danielgolan.elderion.ElderionAuthor.canedpeanutshels;
-import static net.danielgolan.elderion.ElderionAuthor.crystalline_robin;
+import static net.danielgolan.elderion.ElderionAuthor.*;
 import static net.minecraft.block.Blocks.*;
+import static net.minecraft.item.Items.COAL;
 
 public class Elderion implements ModInitializer {
     public static final String MOD_ID = "elderion";
@@ -57,6 +69,14 @@ public class Elderion implements ModInitializer {
             new Identifier(MOD_ID, "poison_resistance"), new KodokuResistanceEnchantment());
     public static final Enchantment AUTO_SMELTING = Registry.register(Registry.ENCHANTMENT,
             new Identifier(MOD_ID, "auto_smelt"), new AutoSmelterEnchantment());
+    //endregion
+    //region items
+    public static final Item WITHER_BONE = Registry.register(Registry.ITEM,
+            new Identifier(MOD_ID, "canedpeanutshels/wither_bone"), new Item(new Item.Settings()
+                    .fireproof().rarity(Rarity.UNCOMMON).recipeRemainder(COAL)));
+    public static final Item SPREADING_DECAY = Registry.register(Registry.ITEM,
+            new Identifier(MOD_ID, "canedpeanutshels/spreading_decay"), new WitherBoneMealItem(new Item.Settings()
+                    .fireproof().rarity(Rarity.UNCOMMON)));
     //endregion
 
     /*/
@@ -142,5 +162,9 @@ public class Elderion implements ModInitializer {
                         UMBRASAND.block().getDefaultState(), 30))
                 .range(new RangeDecoratorConfig(new UniformHeightProvider()));
         /*/
+    }
+
+    private static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> registerFeature(String id, ConfiguredFeature<FC, ?> configuredFeature) {
+        return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, id, configuredFeature);
     }
 }
